@@ -1,0 +1,57 @@
+.profile{
+
+    text-align: center;
+    border: 1px solid darkmagenta;
+    border-radius: 5px;
+    width: 40%;
+    margin-left: 33%;
+    margin-top: 10%;
+}
+
+input{
+
+    margin: 10px;
+    padding: 5px;
+}
+
+button{
+
+    margin:10px;
+    padding:5px;
+    background-color: darkmagenta;
+    width: 20%;
+    color: white;
+    font-weight: bold;
+    border: 1px solid darkmagenta;
+    border-radius: 3px;
+
+}
+
+h1{
+
+
+    font-weight: bold;
+    color: darkmagenta;
+}
+
+img{
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50px;
+    padding-left: 100px;
+}
+
+label.file{
+
+    display: block;
+    width: 200px;
+    background: #e3362c;
+    color: #fff;
+    padding: 12px;
+    margin: 10px auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ 

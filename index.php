@@ -1,14 +1,14 @@
 <?php
 
 
-
+session_start();
 
 include("connection.php");
 if(isset($_POST['submit']))
 
 {
 
-
+     
       $email = $_POST['email'];
       $password = $_POST['password'];
 
@@ -16,17 +16,21 @@ if(isset($_POST['submit']))
       $sql = "SELECT * FROM details WHERE email = '$email' and password='$password'";
       $result=mysqli_query($conn,$sql);
       $num = mysqli_num_rows($result);
+      $row = mysqli_fetch_assoc($result);
 
 
 
       if($num > 0 ){
 
+
+            $_SESSION['name']= $row['name'];
+            $_SESSION['email']= $row['email'];
             header("location:welcome.php");
       }
 
       else{
 
-           echo'<script>alert("Invaild email / password")</script>';
+           echo'<script>alert("Email and  password is not matching")</script>';
       }
 
 }
